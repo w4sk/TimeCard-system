@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/timecard-system/node_modules
+/timecard-system/.pnp
+/timecard-system.pnp.js
+
+# testing
+/timecard-system/coverage
+
+# production
+/timecard-system/build
+
+# misc
+/timecard-system/.DS_Store
+/timecard-system/.env.local
+/timecard-system/.env.development.local
+/timecard-system/.env.test.local
+/timecard-system/.env.production.local
+
+/timecard-system/npm-debug.log*
+/timecard-system/yarn-debug.log*
+/timecard-system/yarn-error.log*
+
+#go-admin
+/go-admin/.dbdata
