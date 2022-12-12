@@ -1,7 +1,7 @@
 package database
 
 import (
-	models "admin/src/modules"
+	"admin/src/models"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
