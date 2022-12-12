@@ -2,6 +2,7 @@ package main
 
 import (
 	"admin/src/database"
+	"admin/src/routes"
 
 	"github.com/gofiber/fiber/v2"
 )
@@ -12,12 +13,13 @@ func main() {
 	// Migration
 	database.AutoMigrate()
 
+	config := fiber.Config{
+		ReadBufferSize: 8192,
+	}
 	// fiber API
-	app := fiber.New()
+	app := fiber.New(config)
 
-	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Hello, World 👋!")
-	})
+	routes.Setup(app)
 
 	app.Listen(":3000")
 }

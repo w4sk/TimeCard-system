@@ -24,3 +24,4 @@
 
 #go-admin
 /go-admin/.dbdata
+/go-admin/tmp
